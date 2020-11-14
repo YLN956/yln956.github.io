@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>想变得有趣</title>
+  <title>yln&#39;blog</title>
   
   
   <link href="https://www.myblog.yln956.top/atom.xml" rel="self"/>
@@ -10,7 +10,7 @@
   <id>https://www.myblog.yln956.top/</id>
   
   <author>
-    <name>yln&#39;blog</name>
+    <name>yln</name>
     
   </author>
   
