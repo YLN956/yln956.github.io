@@ -3,11 +3,11 @@
   <title>yln&#39;blog</title>
   
   
-  <link href="https://www.myblog.yln956.top/atom.xml" rel="self"/>
+  <link href="http://www.myblog.yln956.top/atom.xml" rel="self"/>
   
-  <link href="https://www.myblog.yln956.top/"/>
+  <link href="http://www.myblog.yln956.top/"/>
   <updated>2020-11-12T20:54:57.799Z</updated>
-  <id>https://www.myblog.yln956.top/</id>
+  <id>http://www.myblog.yln956.top/</id>
   
   <author>
     <name>yln</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="https://www.myblog.yln956.top/2020/11/14/hello-world/"/>
-    <id>https://www.myblog.yln956.top/2020/11/14/hello-world/</id>
+    <link href="http://www.myblog.yln956.top/2020/11/14/hello-world/"/>
+    <id>http://www.myblog.yln956.top/2020/11/14/hello-world/</id>
     <published>2020-11-14T05:33:37.585Z</published>
     <updated>2020-11-12T20:54:57.799Z</updated>
     
@@ -38,8 +38,8 @@
   
   <entry>
     <title>sqli_labs1-20</title>
-    <link href="https://www.myblog.yln956.top/2020/11/06/sqli-labs1-20/"/>
-    <id>https://www.myblog.yln956.top/2020/11/06/sqli-labs1-20/</id>
+    <link href="http://www.myblog.yln956.top/2020/11/06/sqli-labs1-20/"/>
+    <id>http://www.myblog.yln956.top/2020/11/06/sqli-labs1-20/</id>
     <published>2020-11-06T12:48:13.000Z</published>
     <updated>2020-11-12T20:54:57.989Z</updated>
     
@@ -53,12 +53,12 @@
     
     
     
-    <category term="sqli-labs1-20" scheme="https://www.myblog.yln956.top/categories/sqli-labs1-20/"/>
+    <category term="sqli-labs1-20" scheme="http://www.myblog.yln956.top/categories/sqli-labs1-20/"/>
     
     
-    <category term="sqlilabs" scheme="https://www.myblog.yln956.top/tags/sqlilabs/"/>
+    <category term="sqlilabs" scheme="http://www.myblog.yln956.top/tags/sqlilabs/"/>
     
-    <category term="sql注入" scheme="https://www.myblog.yln956.top/tags/sql%E6%B3%A8%E5%85%A5/"/>
+    <category term="sql注入" scheme="http://www.myblog.yln956.top/tags/sql%E6%B3%A8%E5%85%A5/"/>
     
   </entry>
   
