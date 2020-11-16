@@ -6,7 +6,7 @@
   <link href="http://www.blog.yln956.top/atom.xml" rel="self"/>
   
   <link href="http://www.blog.yln956.top/"/>
-  <updated>2020-11-12T20:54:57.799Z</updated>
+  <updated>2020-11-16T15:22:38.480Z</updated>
   <id>http://www.blog.yln956.top/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>upload-labs</title>
+    <link href="http://www.blog.yln956.top/2020/11/16/upload-labs/"/>
+    <id>http://www.blog.yln956.top/2020/11/16/upload-labs/</id>
+    <published>2020-11-16T14:21:06.000Z</published>
+    <updated>2020-11-16T15:22:38.480Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="upload-labs"><a href="#upload-labs" class="headerlink" title="upload-labs"></a>upload-labs</h1><p>upload-labs源码地址：<a href="https://github.com/c0ny1/upload-labs">https://github.com/c0ny1/upload-labs</a><br><img src="/2020/11/16/upload-labs/image-20201116230031569.png" loading="lazy"></p><h2 id="Pass-1-js检查"><a href="#Pass-1-js检查" class="headerlink" title="Pass-1-js检查"></a>Pass-1-js检查</h2><p>提示说是前端JS检查，有很多种方法</p><p>我列举几种</p><p><strong>方法一：</strong></p><p><img src="/2020/11/16/upload-labs/image-20201116230844842.png" alt="image-20201116230844842" loading="lazy"></p><p>直接改前端源码，加上.php即可</p><p><strong>方法二：</strong></p><p>把php文件后缀改成jpg,png,gif中的一种，再burp抓包修改后缀</p><p><img src="/2020/11/16/upload-labs/image-20201116231814067.png" alt="image-20201116231814067" loading="lazy"></p><p>jpg改成php即可</p><p>PHP一句话木马文件上传后就蚁剑直连即可</p><p><img src="/2020/11/16/upload-labs/image-20201116232130408.png" alt="image-20201116232130408" loading="lazy"></p><p><img src="/2020/11/16/upload-labs/image-20201116232228381.png" alt="image-20201116232228381" loading="lazy"></p><h2 id="Pass-2-只验证Content-type"><a href="#Pass-2-只验证Content-type" class="headerlink" title="Pass-2-只验证Content-type"></a>Pass-2-只验证Content-type</h2><p>Pass-3-黑名单绕过<br>Pass-4-.htaccess绕过<br>Pass-5-大小写绕过<br>Pass-6-空格绕过<br>Pass-7-点绕过<br>Pass-8-::$DATA绕过<br>Pass-9-点+空格+点绕过<br>Pass-10-双写绕过<br>Pass-11-00截断<br>Pass-12-00截断<br>Pass-13-图片马绕过<br>Pass-14-getimagesize()-图片马<br>Pass-15-exif_imagetype()-图片马<br>Pass-16-二次渲染绕过<br>Pass-17-条件竞争<br>Pass-18-条件竞争<br>Pass-19-00截断</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;upload-labs&quot;&gt;&lt;a href=&quot;#upload-labs&quot; class=&quot;headerlink&quot; title=&quot;upload-labs&quot;&gt;&lt;/a&gt;upload-labs&lt;/h1&gt;&lt;p&gt;upload-labs源码地址：&lt;a href=&quot;https://g</summary>
+      
+    
+    
+    
+    <category term="upload-labs" scheme="http://www.blog.yln956.top/categories/upload-labs/"/>
+    
+    
+    <category term="upload-labs" scheme="http://www.blog.yln956.top/tags/upload-labs/"/>
+    
+    <category term="文件上传" scheme="http://www.blog.yln956.top/tags/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
