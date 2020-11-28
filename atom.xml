@@ -6,7 +6,7 @@
   <link href="http://www.blog.yln956.top/atom.xml" rel="self"/>
   
   <link href="http://www.blog.yln956.top/"/>
-  <updated>2020-11-22T16:13:12.218Z</updated>
+  <updated>2020-11-28T13:33:23.985Z</updated>
   <id>http://www.blog.yln956.top/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>老毛子搞定锐捷认证</title>
+    <link href="http://www.blog.yln956.top/2020/11/28/%E8%80%81%E6%AF%9B%E5%AD%90%E6%90%9E%E5%AE%9A%E9%94%90%E6%8D%B7%E8%AE%A4%E8%AF%81/"/>
+    <id>http://www.blog.yln956.top/2020/11/28/%E8%80%81%E6%AF%9B%E5%AD%90%E6%90%9E%E5%AE%9A%E9%94%90%E6%8D%B7%E8%AE%A4%E8%AF%81/</id>
+    <published>2020-11-28T09:13:41.000Z</published>
+    <updated>2020-11-28T13:33:23.985Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="认证原理"><a href="#认证原理" class="headerlink" title="认证原理"></a>认证原理</h2><p>原理很简单，就是把官方的认证放到路由器上，用路由器伪装自己的电脑登录账号，然后再把网络分享出来。学校的校园网客户端一般都是不给开热点的，主要是为了多卖多恰钱，懂得都懂。</p><h2 id="老毛子认证过程"><a href="#老毛子认证过程" class="headerlink" title="老毛子认证过程"></a>老毛子认证过程</h2><h3 id="一共就这下年4个步骤按照顺序来就肯定可以用"><a href="#一共就这下年4个步骤按照顺序来就肯定可以用" class="headerlink" title="!!!一共就这下年4个步骤按照顺序来就肯定可以用"></a>!!!一共就这下年4个步骤按照顺序来就肯定可以用</h3><h5 id="刷好老毛子固件"><a href="#刷好老毛子固件" class="headerlink" title="刷好老毛子固件"></a>刷好老毛子固件</h5><h5 id="伪装mac-伪装成你的电脑"><a href="#伪装mac-伪装成你的电脑" class="headerlink" title="伪装mac,伪装成你的电脑"></a>伪装mac,伪装成你的电脑</h5><h5 id="打开ssh-把mpf文件传进起来"><a href="#打开ssh-把mpf文件传进起来" class="headerlink" title="打开ssh, 把mpf文件传进起来"></a>打开ssh, 把mpf文件传进起来</h5><p>PS:mpf文件就是抓官方认证程序的认证的通讯协议的一个文件<br>这里传一个成都信息工程大学的mpf文件还有抓包软件<a href="http://file.skywang.fun/mpf%E6%8A%93%E5%8C%85%E8%BD%AF%E4%BB%B6%E4%BB%A5%E5%8F%8ACUIT%E7%9A%84mpf%E6%96%87%E4%BB%B6.7z">cuit的移动, 电信, 联通的mpf认证文件</a></p><h5 id="输入账号密码连接"><a href="#输入账号密码连接" class="headerlink" title="输入账号密码连接."></a>输入账号密码连接.</h5><h2 id="操作流程"><a href="#操作流程" class="headerlink" title="操作流程"></a>操作流程</h2><h4 id="伪装Mac"><a href="#伪装Mac" class="headerlink" title="伪装Mac"></a>伪装Mac</h4><p>首先用自己的电脑插上网线，连接上客户端，查看mac地址</p><p><img src="/2020/11/28/%E8%80%81%E6%AF%9B%E5%AD%90%E6%90%9E%E5%AE%9A%E9%94%90%E6%8D%B7%E8%AE%A4%E8%AF%81/image-20201128211809100.png" alt="image-20201128211809100" loading="lazy"></p><p>然后进入老毛子的后台，在这个位置伪装</p><p><img src="/2020/11/28/%E8%80%81%E6%AF%9B%E5%AD%90%E6%90%9E%E5%AE%9A%E9%94%90%E6%8D%B7%E8%AE%A4%E8%AF%81/image-20201128211916301.png" alt="image-20201128211916301" loading="lazy"></p><h4 id="打开ssh-把mpf文件传进起来-1"><a href="#打开ssh-把mpf文件传进起来-1" class="headerlink" title="打开ssh, 把mpf文件传进起来"></a>打开ssh, 把mpf文件传进起来</h4><p><img src="/2020/11/28/%E8%80%81%E6%AF%9B%E5%AD%90%E6%90%9E%E5%AE%9A%E9%94%90%E6%8D%B7%E8%AE%A4%E8%AF%81/image-20201128212028903.png" alt="image-20201128212028903" loading="lazy"></p><p>这里我用的是WINSCP,选择SCP模式主机名字就是路由器后台地址，用户名密码就是后台登录的用户名密码</p><p><img src="/2020/11/28/%E8%80%81%E6%AF%9B%E5%AD%90%E6%90%9E%E5%AE%9A%E9%94%90%E6%8D%B7%E8%AE%A4%E8%AF%81/image-20201128212400835.png" alt="image-20201128212400835" loading="lazy"></p><p>连接上后把抓包到的MPF文件传到/etc/storage这个目录</p><p>之前已经附上成都信息工程大学的移动还有联通的mpf文件, 以及一个抓包软件, 不同学校的同学自己抓就行了</p><p><img src="/2020/11/28/%E8%80%81%E6%AF%9B%E5%AD%90%E6%90%9E%E5%AE%9A%E9%94%90%E6%8D%B7%E8%AE%A4%E8%AF%81/image-20201128212609567.png" alt="image-20201128212609567" loading="lazy"></p><p>然后进路由器后台，保存一下</p><p><img src="/2020/11/28/%E8%80%81%E6%AF%9B%E5%AD%90%E6%90%9E%E5%AE%9A%E9%94%90%E6%8D%B7%E8%AE%A4%E8%AF%81/image-20201128212718027.png" alt="image-20201128212718027" loading="lazy"></p><h2 id="输入账号密码连接-1"><a href="#输入账号密码连接-1" class="headerlink" title="输入账号密码连接"></a>输入账号密码连接</h2><p>输入账号密码</p><p><img src="/2020/11/28/%E8%80%81%E6%AF%9B%E5%AD%90%E6%90%9E%E5%AE%9A%E9%94%90%E6%8D%B7%E8%AE%A4%E8%AF%81/image-20201128212958797.png" alt="image-20201128212958797" loading="lazy"></p><p>然后下面这么设置（这是成都信息工程大学的设置方法，其他的学校DHCP设置可能要改）</p><p><img src="/2020/11/28/%E8%80%81%E6%AF%9B%E5%AD%90%E6%90%9E%E5%AE%9A%E9%94%90%E6%8D%B7%E8%AE%A4%E8%AF%81/image-20201128213222096.png" alt="image-20201128213222096" loading="lazy"></p><p>然后小地球亮了就是连接好了</p><p><img src="/2020/11/28/%E8%80%81%E6%AF%9B%E5%AD%90%E6%90%9E%E5%AE%9A%E9%94%90%E6%8D%B7%E8%AE%A4%E8%AF%81/image-20201128213319350.png" alt="image-20201128213319350" loading="lazy"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="老毛子搞定锐捷认证" scheme="http://www.blog.yln956.top/categories/%E8%80%81%E6%AF%9B%E5%AD%90%E6%90%9E%E5%AE%9A%E9%94%90%E6%8D%B7%E8%AE%A4%E8%AF%81/"/>
+    
+    
+    <category term="校园网破解" scheme="http://www.blog.yln956.top/tags/%E6%A0%A1%E5%9B%AD%E7%BD%91%E7%A0%B4%E8%A7%A3/"/>
+    
+    <category term="好东西，路由器" scheme="http://www.blog.yln956.top/tags/%E5%A5%BD%E4%B8%9C%E8%A5%BF%EF%BC%8C%E8%B7%AF%E7%94%B1%E5%99%A8/"/>
+    
+  </entry>
   
   <entry>
     <title>收集的一些网站（不定期更新）</title>
