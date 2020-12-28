@@ -1,0 +1,1293 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#6200ee"><meta name="author" content="yln"><meta name="copyright" content="yln"><meta name="generator" content="Hexo 5.2.0"><meta name="theme" content="hexo-theme-yun"><title>复习 | yln'blog</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&amp;display=swap" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/star-markdown-css@0.1.22/dist/yun/yun-markdown.min.css"><script src="//at.alicdn.com/t/font_1140697_ed8vp4atwoj.js" async></script><script src="https://cdn.jsdelivr.net/npm/scrollreveal/dist/scrollreveal.min.js" defer></script><script>document.addEventListener("DOMContentLoaded", () => {
+  [".post-card",".post-content img"].forEach((target)=> {
+    ScrollReveal().reveal(target);
+  })
+});
+</script><link class="aplayer-style-marker" rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script class="aplayer-script-marker" src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" defer></script><script class="meting-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js" defer></script><link id="light-prism-css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.20.0/themes/prism.css" media="(prefers-color-scheme: light)"><link id="dark-prism-css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.20.0/themes/prism-tomorrow.css" media="(prefers-color-scheme: dark)"><link rel="shortcut icon" type="image/svg+xml" href="/yun.svg"><link rel="mask-icon" href="/yun.svg" color="#6200ee"><link rel="alternate icon" href="/yun.ico"><link rel="preload" href="/css/hexo-theme-yun.css" as="style"><link rel="preload" href="/js/utils.js" as="script"><link rel="preload" href="/js/hexo-theme-yun.js" as="script"><link rel="prefetch" href="/js/sidebar.js" as="script"><link rel="dns-prefetch" href="/185.199.108.153"><link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin><link rel="stylesheet" href="/css/hexo-theme-yun.css"><link rel="alternate" href="/atom.xml" title="yln'blog" type="application/atom+xml"><script id="yun-config">
+    const Yun = window.Yun || {};
+    window.CONFIG = {"hostname":"www.blog.yln956.top","root":"/","title":"筱&的&博客","version":"1.2.0","mode":"auto","copycode":true,"anonymous_image":"https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/avatar/none.jpg","say":{"api":"/data/sentences.json"},"local_search":{"path":"/search.xml"},"fireworks":{"colors":["148,0,211","255,165,0","255,69,0","0,0,205","255,240,245","186,85,211"]}};
+  </script><link rel="preconnect" href="https://www.google-analytics.com" crossorigin><script async src="https://www.googletagmanager.com/gtag/js?id=UA-121354150-1"></script><script>if (CONFIG.hostname === location.hostname) {
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-121354150-1');
+}</script><script data-ad-client="ca-pub-2245427233262012" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(function(){
+  var bp = document.createElement('script');
+  var curProtocol = window.location.protocol.split(':')[0];
+  if (curProtocol === 'https') {
+    bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else {
+    bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(bp, s);
+})();</script><!-- Google Tag Manager --><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-M9KWR9L');</script><!-- End Google Tag Manager --><meta name="description" content="信安数学基础完全剩余系：有n个元素 简化剩余系：最多n-1个 例如3的简化剩余系：2,4        或       1，5  数据结构线性表对于给定的n个元素，可以构造出的逻辑结构有集合、线性、树、图四种。  一个算法具有5个特性：_有穷_、_确定_、_可行_、_有0个或多个输入_和_有一个或多个输出_。 对算法设计的4个要求是正确_、_可读_、_健壮_和_效率与存储要求。  1、对线性表的基">
+<meta property="og:type" content="article">
+<meta property="og:title" content="复习">
+<meta property="og:url" content="http://www.blog.yln956.top/2020/12/26/%E5%A4%8D%E4%B9%A0/index.html">
+<meta property="og:site_name" content="yln&#39;blog">
+<meta property="og:description" content="信安数学基础完全剩余系：有n个元素 简化剩余系：最多n-1个 例如3的简化剩余系：2,4        或       1，5  数据结构线性表对于给定的n个元素，可以构造出的逻辑结构有集合、线性、树、图四种。  一个算法具有5个特性：_有穷_、_确定_、_可行_、_有0个或多个输入_和_有一个或多个输出_。 对算法设计的4个要求是正确_、_可读_、_健壮_和_效率与存储要求。  1、对线性表的基">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://www.blog.yln956.top/2020/12/26/%E5%A4%8D%E4%B9%A0/image-20201227190842638.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2020/12/26/%E5%A4%8D%E4%B9%A0/image-20201227191913038.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2020/12/26/%E5%A4%8D%E4%B9%A0/image-20201226101009754.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2020/12/26/%E5%A4%8D%E4%B9%A0/image-20201226142157850.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2020/12/26/%E5%A4%8D%E4%B9%A0/wps4.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2020/12/26/%E5%A4%8D%E4%B9%A0/wps6.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2020/12/26/%E5%A4%8D%E4%B9%A0/image-20201226143828172.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2020/12/26/%E5%A4%8D%E4%B9%A0/2-1FS015503O53.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2020/12/26/%E5%A4%8D%E4%B9%A0/2-1FS0155F5a9.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2020/12/26/%E5%A4%8D%E4%B9%A0/2-1FS0155TD42.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2020/12/26/%E5%A4%8D%E4%B9%A0/2-1FS0160020200.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2020/12/26/%E5%A4%8D%E4%B9%A0/wps7.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2020/12/26/%E5%A4%8D%E4%B9%A0/wps14-1608971064985.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2020/12/26/%E5%A4%8D%E4%B9%A0/wps15-1608971064986.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2020/12/26/%E5%A4%8D%E4%B9%A0/wps16-1608971064986.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2020/12/26/%E5%A4%8D%E4%B9%A0/wps17-1608971064986.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2020/12/26/%E5%A4%8D%E4%B9%A0/wps18-1608971064986.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2020/12/26/%E5%A4%8D%E4%B9%A0/2012110416594150.jpg">
+<meta property="og:image" content="http://www.blog.yln956.top/2020/12/26/%E5%A4%8D%E4%B9%A0/2012110417004247.jpg">
+<meta property="og:image" content="http://www.blog.yln956.top/2020/12/26/%E5%A4%8D%E4%B9%A0/2012110417011138.jpg">
+<meta property="og:image" content="http://www.blog.yln956.top/2020/12/26/%E5%A4%8D%E4%B9%A0/2012110417014911.jpg">
+<meta property="og:image" content="http://www.blog.yln956.top/2020/12/26/%E5%A4%8D%E4%B9%A0/wps3.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2020/12/26/%E5%A4%8D%E4%B9%A0/wps10.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2020/12/26/%E5%A4%8D%E4%B9%A0/wps11.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2020/12/26/%E5%A4%8D%E4%B9%A0/wps12.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2020/12/26/%E5%A4%8D%E4%B9%A0/wps17-1609049024682.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2020/12/26/%E5%A4%8D%E4%B9%A0/wps18-1609049024683.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2020/12/26/%E5%A4%8D%E4%B9%A0/wps31.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2020/12/26/%E5%A4%8D%E4%B9%A0/wps32.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2020/12/26/%E5%A4%8D%E4%B9%A0/wps33.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2020/12/26/%E5%A4%8D%E4%B9%A0/wps34.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2020/12/26/%E5%A4%8D%E4%B9%A0/wps35.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2020/12/26/%E5%A4%8D%E4%B9%A0/wps36.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2020/12/26/%E5%A4%8D%E4%B9%A0/image.png">
+<meta property="og:image" content="http://www.blog.yln956.top/2020/12/26/%E5%A4%8D%E4%B9%A0/image-20201227151453700.png">
+<meta property="article:published_time" content="2020-12-25T16:02:52.000Z">
+<meta property="article:modified_time" content="2020-12-27T15:57:52.410Z">
+<meta property="article:author" content="yln">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://www.blog.yln956.top/2020/12/26/%E5%A4%8D%E4%B9%A0/image-20201227190842638.png"><script src="/js/ui/mode.js"></script></head><body><script defer src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script><script defer src="/js/ui/fireworks.js"></script><canvas class="fireworks"></canvas><canvas id="trianglifyContainer"></canvas><script defer src="https://cdn.jsdelivr.net/npm/trianglify@4/dist/trianglify.bundle.js"></script><script>document.addEventListener("DOMContentLoaded", () => {
+  const pattern = trianglify({
+    width: 800,
+    height: 600,
+    cellSize: 75,
+    palette: ["YlGnBu", "GnBu", "Purples", "Blues"],
+  });
+  const canvasOpts = {
+    applyCssScaling: false
+  }
+  document.body.appendChild(pattern.toCanvas(trianglifyContainer, canvasOpts));
+});</script><div class="container"><a class="sidebar-toggle hty-icon-button" id="menu-btn"><div class="hamburger hamburger--spin" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></div></a><div class="sidebar-toggle sidebar-overlay"></div><aside class="sidebar"><script src="/js/sidebar.js"></script><ul class="sidebar-nav"><li class="sidebar-nav-item sidebar-nav-toc hty-icon-button sidebar-nav-active" data-target="post-toc-wrap" title="文章目录"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-list-ordered"></use></svg></li><li class="sidebar-nav-item sidebar-nav-overview hty-icon-button" data-target="site-overview-wrap" title="站点概览"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-passport-line"></use></svg></li></ul><div class="sidebar-panel" id="site-overview-wrap"><div class="site-info fix-top"><a class="site-author-avatar" href="/about/" title="yln"><img width="96" loading="lazy" src="/images/tou.jpg" alt="yln"><span class="site-author-status" title="永远相信美好的事情即将发生">😊</span></a><div class="site-author-name"><a href="/about/">yln</a></div><a class="site-name" href="/about/site.html">yln'blog</a><sub class="site-subtitle"></sub><div class="site-desciption">人生天地间，忽如远行客。</div></div><nav class="site-state"><a class="site-state-item hty-icon-button icon-home" href="/" title="首页"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-home-4-line"></use></svg></span></a><div class="site-state-item"><a href="/archives/" title="归档"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-archive-line"></use></svg></span><span class="site-state-item-count">9</span></a></div><div class="site-state-item"><a href="/categories/" title="分类"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-folder-2-line"></use></svg></span><span class="site-state-item-count">7</span></a></div><div class="site-state-item"><a href="/tags/" title="标签"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-price-tag-3-line"></use></svg></span><span class="site-state-item-count">12</span></a></div><a class="site-state-item hty-icon-button" href="/about/index.html" title="留言板"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-clipboard-line"></use></svg></span></a></nav><hr style="margin-bottom:0.5rem"><div class="links-of-author"><a class="links-of-author-item hty-icon-button" rel="noopener" href="/atom.xml" title="RSS" target="_blank" style="color:orange"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-rss-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://wpa.qq.com/msgrd?v=3&amp;uin=1071232072&amp;site=qq&amp;menu=yes" title="QQ" target="_blank" style="color:#12B7F5"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-qq-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://github.com/YLN956" title="GitHub" target="_blank" style="color:#6e5494"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-github-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://space.bilibili.com/50387172" title="哔哩哔哩" target="_blank" style="color:#FF8EB3"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-bilibili-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="mailto:1071232072@qq.com" title="E-Mail" target="_blank" style="color:#8E71C1"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-mail-line"></use></svg></a></div><hr style="margin:0.5rem 1rem"><div class="links"><a class="links-item hty-icon-button" href="/links/" title="我的小伙伴们" style="color:dodgerblue"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-genderless-line"></use></svg></a><a class="links-item hty-icon-button" href="/girls/" title="喜欢的女孩子" style="color:hotpink"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-women-line"></use></svg></a></div><br><a class="links-item hty-icon-button" id="toggle-mode-btn" href="javascript:;" title="Mode" style="color: #f1cb64"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-contrast-2-line"></use></svg></a></div><div class="sidebar-panel sidebar-panel-active" id="post-toc-wrap"><div class="post-toc"><div class="post-toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BF%A1%E5%AE%89%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80"><span class="toc-number">1.</span> <span class="toc-text">信安数学基础</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link"><span class="toc-number">1.0.0.1.</span> <span class="toc-text"></span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84"><span class="toc-number">2.</span> <span class="toc-text">数据结构</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BA%BF%E6%80%A7%E8%A1%A8"><span class="toc-number">2.0.1.</span> <span class="toc-text">线性表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E7%BB%84%EF%BC%8C%E6%A0%88%EF%BC%8C%E9%98%9F%E5%88%97"><span class="toc-number">2.0.2.</span> <span class="toc-text">数组，栈，队列</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A0%91"><span class="toc-number">2.0.3.</span> <span class="toc-text">树</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8F%8C%E4%BA%B2%E8%A1%A8%E7%A4%BA%E6%B3%95"><span class="toc-number">2.0.3.1.</span> <span class="toc-text">双亲表示法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AD%A9%E5%AD%90%E8%A1%A8%E7%A4%BA%E6%B3%95%EF%BC%88%E9%82%BB%E6%8E%A5%E8%A1%A8%EF%BC%89"><span class="toc-number">2.0.3.2.</span> <span class="toc-text">孩子表示法（邻接表）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AD%A9%E5%AD%90%E5%85%84%E5%BC%9F%E8%A1%A8%E7%A4%BA%E6%B3%95%EF%BC%88%E4%BA%8C%E5%8F%89%E9%93%BE%EF%BC%89"><span class="toc-number">2.0.3.3.</span> <span class="toc-text">孩子兄弟表示法（二叉链）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%A0%91%E8%BD%AC%E6%8D%A2%E4%BA%8C%E5%8F%89%E6%A0%91"><span class="toc-number">2.0.3.4.</span> <span class="toc-text">树转换二叉树</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%A3%AE%E6%9E%97%E8%BD%AC%E6%8D%A2%E4%BA%8C%E5%8F%89%E6%A0%91"><span class="toc-number">2.0.3.5.</span> <span class="toc-text">森林转换二叉树</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BA%8C%E5%8F%89%E6%A0%91%E8%BD%AC%E6%A0%91"><span class="toc-number">2.0.3.6.</span> <span class="toc-text">二叉树转树</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BA%8C%E5%8F%89%E6%A0%91%E8%BD%AC%E6%A3%AE%E6%9E%97"><span class="toc-number">2.0.3.7.</span> <span class="toc-text">二叉树转森林</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%93%88%E5%A4%AB%E6%9B%BC%E6%A0%91HT%E7%9A%84%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84%E7%9A%84%E5%88%9D%E6%80%81%E5%92%8C%E7%BB%88%E6%80%81"><span class="toc-number">2.0.3.8.</span> <span class="toc-text">哈夫曼树HT的存储结构的初态和终态</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%BE"><span class="toc-number">2.0.4.</span> <span class="toc-text">图</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9B%BE%E7%9A%84%E9%82%BB%E6%8E%A5%E7%9F%A9%E9%98%B5%E5%92%8C%E9%82%BB%E6%8E%A5%E8%A1%A8"><span class="toc-number">2.0.4.1.</span> <span class="toc-text">图的邻接矩阵和邻接表</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E9%81%8D%E5%8E%86-DFS-%E5%92%8C%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E9%81%8D%E5%8E%86-BFS"><span class="toc-number">2.0.4.2.</span> <span class="toc-text">深度优先遍历(DFS)和广度优先遍历(BFS)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91%EF%BC%88%E6%99%AE%E9%87%8C%E5%A7%86%E7%AE%97%E6%B3%95%E5%92%8C%E5%85%8B%E9%B2%81%E6%96%AF%E5%8D%A1%E5%B0%94%E7%AE%97%E6%B3%95%EF%BC%89"><span class="toc-number">2.0.4.3.</span> <span class="toc-text">最小生成树（普里姆算法和克鲁斯卡尔算法）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%EF%BC%88%E8%BF%87%E7%A8%8B%EF%BC%89"><span class="toc-number">2.0.4.4.</span> <span class="toc-text">最短路径（过程）</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E6%89%BE"><span class="toc-number">2.0.5.</span> <span class="toc-text">查找</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%92%E5%BA%8F"><span class="toc-number">2.0.6.</span> <span class="toc-text">排序</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#JAVA"><span class="toc-number">3.</span> <span class="toc-text">JAVA</span></a></li></ol></div></div></div></aside><main class="sidebar-translate" id="content"><div id="post"><article class="post-block" itemscope itemtype="https://schema.org/Article"><link itemprop="mainEntityOfPage" href="http://www.blog.yln956.top/2020/12/26/%E5%A4%8D%E4%B9%A0/"><span hidden itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="yln"><meta itemprop="description"></span><span hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="yln'blog"></span><header class="post-header"><h1 class="post-title" itemprop="name headline">复习</h1><div class="post-meta"><div class="post-time" style="display:block"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-calendar-line"></use></svg></span> <time title="创建时间：2020-12-26 00:02:52" itemprop="dateCreated datePublished" datetime="2020-12-26T00:02:52+08:00">2020-12-26</time><span class="post-meta-divider">-</span><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-calendar-2-line"></use></svg></span> <time title="修改时间：2020-12-27 23:57:52" itemprop="dateModified" datetime="2020-12-27T23:57:52+08:00">2020-12-27</time></div><span class="post-count"><span class="post-symbolcount"><span class="post-meta-item-icon" title="本文字数"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-file-word-line"></use></svg></span> <span title="本文字数">3.8k</span><span class="post-meta-divider">-</span><span class="post-meta-item-icon" title="阅读时长"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-timer-line"></use></svg></span> <span title="阅读时长">16m</span></span></span><span class="leancloud_visitors" id="/2020/12/26/%E5%A4%8D%E4%B9%A0/" data-flag-title="复习"><span class="post-meta-divider">-</span><span class="post-meta-item-icon" title="阅读次数"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-eye-line"></use></svg> <span class="leancloud-visitors-count"></span></span></span><div class="post-classify"></div></div></header><section class="post-body" itemprop="articleBody"><div class="post-content markdown-body" style="--smc-primary:#6200ee;"><h1 id="信安数学基础"><a href="#信安数学基础" class="headerlink" title="信安数学基础"></a>信安数学基础</h1><p>完全剩余系：有n个元素</p>
+<p>简化剩余系：最多n-1个</p>
+<h4 id><a href="#" class="headerlink" title></a><img src="/2020/12/26/%E5%A4%8D%E4%B9%A0/image-20201227190842638.png" alt="image-20201227190842638" loading="lazy"></h4><p>例如3的简化剩余系：2,4        或       1，5</p>
+<p><img src="/2020/12/26/%E5%A4%8D%E4%B9%A0/image-20201227191913038.png" alt="image-20201227191913038" loading="lazy"></p>
+<h1 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h1><h3 id="线性表"><a href="#线性表" class="headerlink" title="线性表"></a>线性表</h3><p>对于给定的n个元素，可以构造出的逻辑结构有<strong>集合、线性、树、图</strong>四种。</p>
+<p> 一个算法具有5个特性：<strong>_有穷_、_确定_、_可行_、_有0个或多个输入_和_有一个或多个输出_。</strong></p>
+<p>对算法设计的4个要求是<strong><em>正确_、_可读_、_健壮_和_效率与存储要求</em></strong>。</p>
+<p><img src="/2020/12/26/%E5%A4%8D%E4%B9%A0/image-20201226101009754.png" alt="image-20201226101009754" loading="lazy"></p>
+<p>1、对线性表的基本操作有哪些？</p>
+<p>答：</p>
+<p>1、构造空线性表；</p>
+<p>2、销毁线性表；</p>
+<p>3、获取线性表表长；</p>
+<p>4、判断线性表是否空表；</p>
+<p>5、访问线性表中第i个元素；</p>
+<p>6、获取线性表中第1个满足某关系的元素e的位置；</p>
+<p>7、在线性表中第i个元素前（或后）插入新元素；</p>
+<p>8、将线性表中第i个元素删除。</p>
+<h3 id="数组，栈，队列"><a href="#数组，栈，队列" class="headerlink" title="数组，栈，队列"></a>数组，栈，队列</h3><p>8、表达式23+((12<em>3-2)/4+34</em>5/7)+108/9的后缀表达式是<strong><em>23 12 3<em>2-4/34 5</em>7/++108 9 /+</em></strong>。</p>
+<p><strong>画树或者直接写  左根右→左右根</strong></p>
+<p>13、设循环队列用数组A[1..M]表示，队首、队尾指针分别是FRONT和TAIL，判定队满的条件为<strong>_(TAIL+1)%M==FRONT%M_。</strong></p>
+<p>14、设Q[0..N-1]为循环队列，其头、尾指针分别为P和R，则队Q中当前所含元素个数为<strong><em>(R-P+N)%N</em></strong>。</p>
+<p>设数组a[1..50,1..80]的基地址为2000，每个元素占2个存储单元，若以行序为主序顺序存储，则元素a[45,68]的存储地址为___9174__；若以列序为主序顺序存储，则元素a[45,68]的存储地址为___8788__。</p>
+<p><strong>行：（44 * 80 + 67） * 2 + 2000= 9174         列：（67 * 50 +44） * 2 + 2000 = 8788</strong></p>
+<p>18、n阶对称矩阵a满足a[i][j]=a[j][i],i,j=1..n,，用一维数组t[1..m]存储(按行向存储左下三角)时，t的长度为<strong><em>n(n+1)/2</em></strong>， 当</p>
+<p><img src="/2020/12/26/%E5%A4%8D%E4%B9%A0/image-20201226142157850.png" alt="image-20201226142157850" loading="lazy"></p>
+<p>设矩阵A= <img src="/2020/12/26/%E5%A4%8D%E4%B9%A0/wps4.png" alt="img" loading="lazy"></p>
+<p>（1）若将A视为对称矩阵，画出对其压缩存储的存储表；</p>
+<p>（2）若将A视为稀疏矩阵，画出其三元表形式压缩存储表；</p>
+<p>（3）若将A视为稀疏矩阵，画出A的十字链表结构。</p>
+<p>（1）</p>
+<table>
+<thead>
+<tr>
+<th>2</th>
+<th>0</th>
+<th>0</th>
+<th>0</th>
+<th>3</th>
+<th>0</th>
+<th>4</th>
+<th>0</th>
+<th>0</th>
+<th>0</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<p>（2）</p>
+<table>
+<thead>
+<tr>
+<th>i</th>
+<th>1</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>j</td>
+<td>1</td>
+<td>4</td>
+<td>3</td>
+<td>2</td>
+<td>1</td>
+</tr>
+<tr>
+<td>v</td>
+<td>2</td>
+<td>4</td>
+<td>3</td>
+<td>3</td>
+<td>4</td>
+</tr>
+</tbody></table>
+<p>（3）</p>
+<p><img src="/2020/12/26/%E5%A4%8D%E4%B9%A0/wps6.png" alt="img" loading="lazy"></p>
+<p>24、已知广义表A=(9，7，(8，10，(99))，12)，试用求表头和表尾的操作Head( )和Tail( )将原子元素99从A中取出来。</p>
+<p>答：Head(Head(Tail(Tail(Head(Tail(Tail(A)))))))。</p>
+<p><strong>head取头，返回单个元素(不带括号)，tail取尾（除头取的元素以外的其他元素），返回集合元素（带括号）</strong></p>
+<p><img src="/2020/12/26/%E5%A4%8D%E4%B9%A0/image-20201226143828172.png" alt="image-20201226143828172" loading="lazy"></p>
+<h3 id="树"><a href="#树" class="headerlink" title="树"></a>树</h3><h4 id="双亲表示法"><a href="#双亲表示法" class="headerlink" title="双亲表示法"></a>双亲表示法</h4><p>取一块连续的内存空间，在存储每个结点的同时，各自都附加一个记录其父结点位置的变量。</p>
+<p>在树结构中，除了树根外，每个结点都只有一个父结点（又叫“双亲结点”）。</p>
+<p><img src="/2020/12/26/%E5%A4%8D%E4%B9%A0/2-1FS015503O53.png" alt="img" loading="lazy"></p>
+<h4 id="孩子表示法（邻接表）"><a href="#孩子表示法（邻接表）" class="headerlink" title="孩子表示法（邻接表）"></a>孩子表示法（邻接表）</h4><p>将树中的每个结点的孩子结点排列成一个线性表，用链表存储起来。对于含有 n 个结点的树来说，就会有 n 个单链表，将 n 个单链表的头指针存储在一个线性表中，这样的表示方法就是孩子表示法。</p>
+<blockquote>
+<p>如果结点没有孩子（例如叶子结点），那么它的单链表为空表。</p>
+</blockquote>
+<p>例如，使用孩子表示法存储图 1 （A），存储效果如图 2：</p>
+<p><img src="/2020/12/26/%E5%A4%8D%E4%B9%A0/2-1FS0155F5a9.png" alt="img" loading="lazy"></p>
+<p>图 2 孩子表示法</p>
+<p>使用孩子表示法存储的树结构，正好和双亲表示法相反，适用于查找某结点的孩子结点，不适用于查找其父结点。可以将两种表示方法合二为一，存储效果如图 3：</p>
+<h4 id="孩子兄弟表示法（二叉链）"><a href="#孩子兄弟表示法（二叉链）" class="headerlink" title="孩子兄弟表示法（二叉链）"></a>孩子兄弟表示法（二叉链）</h4><p>使用链式存储结构存储普通树。链表中每个结点由 3 部分组成：</p>
+<p><img src="/2020/12/26/%E5%A4%8D%E4%B9%A0/2-1FS0155TD42.png" alt="img" loading="lazy"></p>
+<p>图 4 结点构成</p>
+<p>其中孩子指针域，表示指向当前结点的第一个孩子结点，兄弟结点表示指向当前结点的下一个兄弟结点。</p>
+<p>通过孩子兄弟表示法，普通树转化为了二叉树，所以孩子兄弟表示法又被称为“二叉树表示法”或者“二叉链表表示法”。</p>
+<p>例如，用孩子兄弟表示法表示图 1 （A）的普通树，存储结果为：</p>
+<p><img src="/2020/12/26/%E5%A4%8D%E4%B9%A0/2-1FS0160020200.png" alt="img" loading="lazy"></p>
+<p>1、已知一棵度为3的树有2个度为1的结点，3个度为2的结点，4个度为3的结点，则该树有<strong>__</strong><strong>12</strong>__个叶结点。</p>
+<p><strong>B:边数，N：结点数</strong></p>
+<p><strong>n=b+1    n=n0+n1+n2+n3=n1+2<em>n2+3 <em>n3+1→ n=n2+2 <em>n3+1</em></em>        **3+2</em>4+1</strong></p>
+<p>6、已知一棵二叉树的中序序列是DBEAFIHCG，后序序列是DEBHIFGCA，画出这棵二叉树。</p>
+<p><img src="/2020/12/26/%E5%A4%8D%E4%B9%A0/wps7.png" alt="img" loading="lazy"></p>
+<p>中缀式a+b<em>3+4</em>(c-d)对应的前缀式为________，若a=1, b=2, c=3, d=4，则后缀式db/cc<em>a-b</em>+的运算结果为________。</p>
+<p>14、设一棵二叉树的前序遍历序列为ABDFCEGH，中序遍历序列为BFDAGEHC</p>
+<p>(1)画出这棵二叉树。</p>
+<p>(2)画出这棵二叉树的后序线索树。</p>
+<p>(3)将这棵二叉树转换成对应的树（或森林)</p>
+<p><strong>线索树先写出序列，无左孩子就指向前驱，无右孩子就指向后继</strong></p>
+<p><img src="/2020/12/26/%E5%A4%8D%E4%B9%A0/wps14-1608971064985.png" alt="img" loading="lazy"></p>
+<p><img src="/2020/12/26/%E5%A4%8D%E4%B9%A0/wps15-1608971064986.png" alt="img" loading="lazy">                <img src="/2020/12/26/%E5%A4%8D%E4%B9%A0/wps16-1608971064986.png" alt="img" loading="lazy"></p>
+<p>15、将下列由三棵树组成的森林转换为二叉树。</p>
+<p><img src="/2020/12/26/%E5%A4%8D%E4%B9%A0/wps17-1608971064986.png" alt="img" loading="lazy"></p>
+<p><img src="/2020/12/26/%E5%A4%8D%E4%B9%A0/wps18-1608971064986.png" alt="img" loading="lazy"></p>
+<h4 id="树转换二叉树"><a href="#树转换二叉树" class="headerlink" title="树转换二叉树"></a><strong>树转换二叉树</strong></h4><p>（1）加线。在所有兄弟结点之间加一条连线。</p>
+<p>（2）去线。树中的每个结点，只保留它与第一个孩子结点的连线，删除它与其它孩子结点之间的连线。</p>
+<p>（3）层次调整。以树的根节点为轴心，将整棵树顺时针旋转一定角度，使之结构层次分明。（注意第一个孩子是结点的左孩子，兄弟转换过来的孩子是结点的右孩子）</p>
+<p><img src="/2020/12/26/%E5%A4%8D%E4%B9%A0/2012110416594150.jpg" alt="img" loading="lazy"></p>
+<p>口诀：兄弟相连，长兄为父，孩子靠左。</p>
+<p>核心：左孩子，右兄弟          </p>
+<h4 id="森林转换二叉树"><a href="#森林转换二叉树" class="headerlink" title="森林转换二叉树"></a>森林转换二叉树</h4><p>（1）把每棵树转换为二叉树。</p>
+<p>（2）第一棵二叉树不动，从第二棵二叉树开始，依次把后一棵二叉树的根结点作为前一棵二叉树的根结点的右子树，用线连接起来。</p>
+<p><img src="/2020/12/26/%E5%A4%8D%E4%B9%A0/2012110417004247.jpg" alt="img" loading="lazy"></p>
+<h4 id="二叉树转树"><a href="#二叉树转树" class="headerlink" title="二叉树转树"></a><strong>二叉树转树</strong></h4><p>是树转换为二叉树的逆过程。还原结点A的孩子，结点A的左孩子开始，一直向右走，这些结点就是结点A的孩子，遇见顺序就是它们作为结点A孩子的顺序。</p>
+<p>（1）加线。若某结点X的左孩子结点存在，则将这个左孩子的右孩子结点、右孩子的右孩子结点、右孩子的右孩子的右孩子结点…，都作为结点X的孩子。将结点X与这些右孩子结点用线连接起来。</p>
+<p>（2）去线。删除原二叉树中所有结点与其右孩子结点的连线。</p>
+<p>（3）层次调整。</p>
+<p><img src="/2020/12/26/%E5%A4%8D%E4%B9%A0/2012110417011138.jpg" alt="img" loading="lazy"></p>
+<h4 id="二叉树转森林"><a href="#二叉树转森林" class="headerlink" title="二叉树转森林"></a><strong>二叉树转森林</strong></h4><p>假如一棵二叉树的根结点有右孩子，则这棵二叉树能够转换为森林，否则将转换为一棵树。在二叉树种A有右子树上向右的一连串结点都是A的兄弟，那么就把兄弟分离，A的每个兄弟结点作为森林中树的根结点。</p>
+<p>（1）从根结点开始，若右孩子存在，则把与右孩子结点的连线删除。再查看分离后的二叉树，若其根结点的右孩子存在，则连线删除…。直到所有这些根结点与右孩子的连线都删除为止。</p>
+<p>（2）将每棵分离后的二叉树转换为树。</p>
+<p><img src="/2020/12/26/%E5%A4%8D%E4%B9%A0/2012110417014911.jpg" alt="img" loading="lazy"></p>
+<p><strong>哈夫曼树编码，左0右1</strong></p>
+<h4 id="哈夫曼树HT的存储结构的初态和终态"><a href="#哈夫曼树HT的存储结构的初态和终态" class="headerlink" title="哈夫曼树HT的存储结构的初态和终态"></a>哈夫曼树HT的存储结构的初态和终态</h4><p>18、已知下列字符A、B、C、D、E、F、G的权值分别为3、12、7、4、2、8、11，试填写出其对应哈夫曼树HT的存储结构的初态和终态。</p>
+<p>表18-1  HT初态</p>
+<table>
+<thead>
+<tr>
+<th>下标值</th>
+<th>数据域</th>
+<th>weight</th>
+<th>parent</th>
+<th>lchild</th>
+<th>rchild</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>A</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>2</td>
+<td>B</td>
+<td>12</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>3</td>
+<td>C</td>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>4</td>
+<td>D</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>5</td>
+<td>E</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>6</td>
+<td>F</td>
+<td>8</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>7</td>
+<td>G</td>
+<td>11</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>8</td>
+<td></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>9</td>
+<td></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>10</td>
+<td></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>11</td>
+<td></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>12</td>
+<td></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>13</td>
+<td></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody></table>
+<p>表18-2  HT终态（书上的结果）</p>
+<table>
+<thead>
+<tr>
+<th>下标值</th>
+<th>数据域</th>
+<th>weight</th>
+<th>parent</th>
+<th>lchild</th>
+<th>rchild</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>A</td>
+<td>3</td>
+<td>8</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>2</td>
+<td>B</td>
+<td>12</td>
+<td>12</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>3</td>
+<td>C</td>
+<td>7</td>
+<td>10</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>4</td>
+<td>D</td>
+<td>4</td>
+<td>9</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>5</td>
+<td>E</td>
+<td>2</td>
+<td>8</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>6</td>
+<td>F</td>
+<td>8</td>
+<td>10</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>7</td>
+<td>G</td>
+<td>11</td>
+<td>11</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>8</td>
+<td></td>
+<td>5</td>
+<td>9</td>
+<td>1</td>
+<td>5</td>
+</tr>
+<tr>
+<td>9</td>
+<td></td>
+<td>9</td>
+<td>11</td>
+<td>4</td>
+<td>8</td>
+</tr>
+<tr>
+<td>10</td>
+<td></td>
+<td>15</td>
+<td>12</td>
+<td>3</td>
+<td>6</td>
+</tr>
+<tr>
+<td>11</td>
+<td></td>
+<td>20</td>
+<td>13</td>
+<td>7</td>
+<td>9</td>
+</tr>
+<tr>
+<td>12</td>
+<td></td>
+<td>27</td>
+<td>13</td>
+<td>2</td>
+<td>10</td>
+</tr>
+<tr>
+<td>13</td>
+<td></td>
+<td>47</td>
+<td>0</td>
+<td>11</td>
+<td>12</td>
+</tr>
+</tbody></table>
+<p><img src="/2020/12/26/%E5%A4%8D%E4%B9%A0/wps3.png" alt="img" loading="lazy"></p>
+<h3 id="图"><a href="#图" class="headerlink" title="图"></a>图</h3><p>7、在图G的邻接表表示中，每个顶点邻接表中所含的结点数（即该顶点的链表结点），对于无向图来说等于该顶点的<strong><em>度</em></strong>；对于有向图来说等于该顶点的<strong><em>出度</em></strong>。</p>
+<p>8、在有向图的邻接矩阵表示中，计算第I个顶点入度的方法是<strong><em>第I列非零元的个数</em></strong>。</p>
+<h4 id="图的邻接矩阵和邻接表"><a href="#图的邻接矩阵和邻接表" class="headerlink" title="图的邻接矩阵和邻接表"></a>图的邻接矩阵和邻接表</h4><p>9、请用邻接矩阵和邻接表表示法画出下图G的存储结构。</p>
+<p><img src="/2020/12/26/%E5%A4%8D%E4%B9%A0/wps10.png" alt="img" loading="lazy"></p>
+<p>邻接矩阵：<img src="/2020/12/26/%E5%A4%8D%E4%B9%A0/wps11.png" alt="img" loading="lazy"></p>
+<p>邻接表：</p>
+<p><img src="/2020/12/26/%E5%A4%8D%E4%B9%A0/wps12.png" alt="img" loading="lazy"></p>
+<h4 id="深度优先遍历-DFS-和广度优先遍历-BFS"><a href="#深度优先遍历-DFS-和广度优先遍历-BFS" class="headerlink" title="深度优先遍历(DFS)和广度优先遍历(BFS)"></a>深度优先遍历(DFS)和广度优先遍历(BFS)</h4><p><strong>深度优先遍历(DFS)</strong>　<strong>在此我想用一句话来形容 “不到南墙不回头”。</strong></p>
+<p>11、下面的邻接表表示一个给定的无向图，给出从顶点v4开始，对图用深度优先搜索法进行遍历时的顶点序列<strong><em>v4, v2, v1, v3, v5, v6</em></strong>；给出从顶点v4开始，对图用广度优先搜索法进行遍历时的顶点序列<strong><em>v4, v2, v3, v6, v1, v5</em></strong>。</p>
+<p><img src="/2020/12/26/%E5%A4%8D%E4%B9%A0/wps17-1609049024682.png" alt="img" loading="lazy"></p>
+<p>图示为：<img src="/2020/12/26/%E5%A4%8D%E4%B9%A0/wps18-1609049024683.png" alt="img" loading="lazy"></p>
+<p>12、给出下图G：</p>
+<p>（1）画出G的邻接表表示图；</p>
+<p>（2）根据你画出的邻接表，以顶点1为根，画出G的深度优先生成树和广度优先生成树。</p>
+<p><img src="/2020/12/26/%E5%A4%8D%E4%B9%A0/wps31.png" alt="img" loading="lazy"></p>
+<p>（1）邻接表表示图</p>
+<p><img src="/2020/12/26/%E5%A4%8D%E4%B9%A0/wps32.png" alt="img" loading="lazy"></p>
+<p>（2）深度优先生成树为：</p>
+<p><img src="/2020/12/26/%E5%A4%8D%E4%B9%A0/wps33.png" alt="img" loading="lazy"></p>
+<p>广度优先生成树为：</p>
+<p><img src="/2020/12/26/%E5%A4%8D%E4%B9%A0/wps34.png" alt="img" loading="lazy"></p>
+<h4 id="最小生成树（普里姆算法和克鲁斯卡尔算法）"><a href="#最小生成树（普里姆算法和克鲁斯卡尔算法）" class="headerlink" title="最小生成树（普里姆算法和克鲁斯卡尔算法）"></a>最小生成树（普里姆算法和克鲁斯卡尔算法）</h4><p>13、<strong>Prim（普里姆）算法</strong>适用于求<strong><em>稠密图</em></strong>的网的最小生成树；<strong>Kruskal（克鲁斯卡尔）算法</strong>适用于求<strong><em>稀疏图</em></strong>的网的最小生成树。</p>
+<p><strong>Prim（普里姆）算法：从某点出发遍历周围最小权值的边，直到遍历完所有点，边连线不能形成环</strong></p>
+<p><strong>Kruskal（克鲁斯卡尔）算法：从权值最小的边开始，一直遍历最小权值的边，直到遍历完所有点，边连线不能形成环</strong></p>
+<p>16、在拓扑分类中，拓扑序列的最后一个顶点必定是_<strong>出度为0</strong>_的顶点。</p>
+<p><strong>拓扑排列，从出度为零的点开始选择</strong></p>
+<h4 id="最短路径（过程）"><a href="#最短路径（过程）" class="headerlink" title="最短路径（过程）"></a>最短路径（过程）</h4><p>17、已知一图如下图所示：</p>
+<p>（1）写出该图的两个拓扑排序（升序、降序）；</p>
+<p>（2）以1为源点，4为终点，给出所有事件允许发生的最早时间和最晚时间，并给出关键路径；</p>
+<p>（3）求顶点1到其余各顶点的最短路径。</p>
+<p><img src="/2020/12/26/%E5%A4%8D%E4%B9%A0/wps35.png" alt="img" loading="lazy"></p>
+<p>（1）拓扑排序升序：1, 5, 6, 2, 7, 3, 8, 4；降序：1, 5, 6, 7, 8, 2, 3, 4</p>
+<p>（2）关键路径</p>
+<table>
+<thead>
+<tr>
+<th>顶点</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>6</th>
+<th>7</th>
+<th>8</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Ve</td>
+<td>0</td>
+<td>30</td>
+<td>50</td>
+<td>65</td>
+<td>10</td>
+<td>17</td>
+<td>25</td>
+<td>35</td>
+</tr>
+<tr>
+<td>Vl</td>
+<td>0</td>
+<td>30</td>
+<td>50</td>
+<td>65</td>
+<td>15</td>
+<td>27</td>
+<td>44</td>
+<td>59</td>
+</tr>
+</tbody></table>
+<p>关键路径为1, 2, 3, 4</p>
+<p><strong>（3）最短路径：</strong></p>
+<table>
+<thead>
+<tr>
+<th>顶点集</th>
+<th>D[2]</th>
+<th>D[3]</th>
+<th>D[4]</th>
+<th>D[5]</th>
+<th>D[6]</th>
+<th>D[7]</th>
+<th>D[8]</th>
+<th>P[2]</th>
+<th>P[3]</th>
+<th>P[4]</th>
+<th>P[5]</th>
+<th>P[6]</th>
+<th>P[7]</th>
+<th>P[8]</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>30</td>
+<td>-1</td>
+<td>60</td>
+<td>10</td>
+<td>-1</td>
+<td>-1</td>
+<td>-1</td>
+<td>1</td>
+<td>-1</td>
+<td>1</td>
+<td>1</td>
+<td>-1</td>
+<td>-1</td>
+<td>-1</td>
+</tr>
+<tr>
+<td>1,5</td>
+<td>25</td>
+<td>-1</td>
+<td>60</td>
+<td></td>
+<td>17</td>
+<td>-1</td>
+<td>-1</td>
+<td>5</td>
+<td>-1</td>
+<td>1</td>
+<td></td>
+<td>5</td>
+<td>-1</td>
+<td>-1</td>
+</tr>
+<tr>
+<td>1,5,6</td>
+<td>20</td>
+<td>33</td>
+<td>60</td>
+<td></td>
+<td></td>
+<td>25</td>
+<td>-1</td>
+<td>6</td>
+<td>6</td>
+<td>1</td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>-1</td>
+</tr>
+<tr>
+<td>1,5,6,2</td>
+<td></td>
+<td>33</td>
+<td>60</td>
+<td></td>
+<td></td>
+<td>25</td>
+<td>-1</td>
+<td></td>
+<td>6</td>
+<td>1</td>
+<td></td>
+<td></td>
+<td>6</td>
+<td>-1</td>
+</tr>
+<tr>
+<td>1,5,6,2,7</td>
+<td></td>
+<td>31</td>
+<td>28</td>
+<td></td>
+<td></td>
+<td></td>
+<td>35</td>
+<td></td>
+<td>7</td>
+<td>7</td>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+</tr>
+<tr>
+<td>1,5,6,2,7,4</td>
+<td></td>
+<td>31</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>35</td>
+<td></td>
+<td>7</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+</tr>
+<tr>
+<td>1,5,6,2,7,4,3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>35</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+</tr>
+<tr>
+<td>1,5,6,2,7,4,3,8</td>
+<td>20</td>
+<td>31</td>
+<td>28</td>
+<td>10</td>
+<td>17</td>
+<td>25</td>
+<td>35</td>
+<td>6</td>
+<td>7</td>
+<td>7</td>
+<td>1</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+</tr>
+</tbody></table>
+<p>注：1、表中未填项即是其上面那一项，因为已经找到了最短路径，故相应数组元素不再再修改；</p>
+<p>2、未列D[1]和P[1]，值均为0，自己到自己。</p>
+<p>18、已知一图如下图所示：</p>
+<p>（1）写出该图的两个拓扑排序（升序、降序）；</p>
+<p>（2）以0为源点，11为终点，计算出所有事件和活动的最早发生时间和最晚发生时间，并给出关键路径；</p>
+<p>（3）求顶点1到其余各顶点的<strong>最短路径</strong>。</p>
+<p><img src="/2020/12/26/%E5%A4%8D%E4%B9%A0/wps36.png" alt="img" loading="lazy"></p>
+<p>（1）拓扑排序升序：0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11；降序：0, 3, 4, 8, 2, 7, 10, 1, 5, 6, 9, 11</p>
+<p>（2）关键路径</p>
+<table>
+<thead>
+<tr>
+<th>顶点</th>
+<th>0</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>6</th>
+<th>7</th>
+<th>8</th>
+<th>9</th>
+<th>10</th>
+<th>11</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Ve</td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
+<td>4</td>
+<td>9</td>
+<td>5</td>
+<td>9</td>
+<td>7</td>
+<td>12</td>
+<td>13</td>
+<td>13</td>
+<td>20</td>
+</tr>
+<tr>
+<td>Vl</td>
+<td>0</td>
+<td>4</td>
+<td>2</td>
+<td>5</td>
+<td>10</td>
+<td>7</td>
+<td>9</td>
+<td>9</td>
+<td>13</td>
+<td>13</td>
+<td>14</td>
+<td>20</td>
+</tr>
+</tbody></table>
+<p>关键事件：0, 2, 6, 9, 11</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>a1</th>
+<th>a2</th>
+<th>a3</th>
+<th>a4</th>
+<th>a5</th>
+<th>a6</th>
+<th>a7</th>
+<th>a8</th>
+<th>a9</th>
+<th>a10</th>
+<th>a11</th>
+<th>a12</th>
+<th>a13</th>
+<th>a14</th>
+<th>a15</th>
+<th>a16</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Ee</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+<td>9</td>
+<td>5</td>
+<td>9</td>
+<td>7</td>
+<td>7</td>
+<td>12</td>
+<td>13</td>
+<td>13</td>
+</tr>
+<tr>
+<td>El</td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>10</td>
+<td>7</td>
+<td>9</td>
+<td>9</td>
+<td>11</td>
+<td>13</td>
+<td>13</td>
+<td>14</td>
+</tr>
+</tbody></table>
+<p>关键活动为：a2, a5, a11, a15</p>
+<p>故关键路径为：0, 2, 6, 9, 11</p>
+<p><strong>（3）最短路径</strong></p>
+<table>
+<thead>
+<tr>
+<th>顶点集</th>
+<th>0</th>
+<th>0,1</th>
+<th>0,1,2</th>
+<th>0,1,2,3</th>
+<th>0,1,2,3, 5</th>
+<th>0,1,2,3, 5,6</th>
+<th>0,1,2,3, 5,6,7</th>
+<th>0,1,2,3, 5,6,7,4</th>
+<th>0,1,2,3, 5,6,7,4, 10</th>
+<th>0,1,2,3, 5,6,7,4, 10,9</th>
+<th>0,1,2,3, 5,6,7,4, 10,9,8</th>
+<th>0,1,2,3, 5,6,7,4, 10,9,8,11</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>D[1]</td>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>D[2]</td>
+<td>2</td>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>D[3]</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td>D[4]</td>
+<td>-1</td>
+<td>-1</td>
+<td>-1</td>
+<td>9</td>
+<td>9</td>
+<td>9</td>
+<td>9</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>9</td>
+</tr>
+<tr>
+<td>D[5]</td>
+<td>-1</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>5</td>
+</tr>
+<tr>
+<td>D[6]</td>
+<td>-1</td>
+<td>-1</td>
+<td>9</td>
+<td>9</td>
+<td>7</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+</tr>
+<tr>
+<td>D[7]</td>
+<td>-1</td>
+<td>-1</td>
+<td>7</td>
+<td>7</td>
+<td>7</td>
+<td>7</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+</tr>
+<tr>
+<td>D[8]</td>
+<td>-1</td>
+<td>-1</td>
+<td>-1</td>
+<td>-1</td>
+<td>-1</td>
+<td>-1</td>
+<td>-1</td>
+<td>12</td>
+<td>12</td>
+<td>12</td>
+<td></td>
+<td>12</td>
+</tr>
+<tr>
+<td>D[9]</td>
+<td>-1</td>
+<td>-1</td>
+<td>-1</td>
+<td>-1</td>
+<td>-1</td>
+<td>11</td>
+<td>11</td>
+<td>11</td>
+<td>11</td>
+<td></td>
+<td></td>
+<td>11</td>
+</tr>
+<tr>
+<td>D[10]</td>
+<td>-1</td>
+<td>-1</td>
+<td>-1</td>
+<td>-1</td>
+<td>-1</td>
+<td>-1</td>
+<td>10</td>
+<td>10</td>
+<td></td>
+<td></td>
+<td></td>
+<td>10</td>
+</tr>
+<tr>
+<td>D[11]</td>
+<td>-1</td>
+<td>-1</td>
+<td>-1</td>
+<td>-1</td>
+<td>-1</td>
+<td>-1</td>
+<td>-1</td>
+<td>-1</td>
+<td>16</td>
+<td>16</td>
+<td>16</td>
+<td>16</td>
+</tr>
+<tr>
+<td>P[1]</td>
+<td>0</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>0</td>
+</tr>
+<tr>
+<td>P[2]</td>
+<td>0</td>
+<td>0</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>0</td>
+</tr>
+<tr>
+<td>P[3]</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>0</td>
+</tr>
+<tr>
+<td>P[4]</td>
+<td>-1</td>
+<td>-1</td>
+<td>-1</td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>P[5]</td>
+<td>-1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>P[6]</td>
+<td>-1</td>
+<td>-1</td>
+<td>2</td>
+<td>2</td>
+<td>5</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>5</td>
+</tr>
+<tr>
+<td>P[7]</td>
+<td>-1</td>
+<td>-1</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>P[8]</td>
+<td>-1</td>
+<td>-1</td>
+<td>-1</td>
+<td>-1</td>
+<td>-1</td>
+<td>-1</td>
+<td>-1</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td>P[9]</td>
+<td>-1</td>
+<td>-1</td>
+<td>-1</td>
+<td>-1</td>
+<td>-1</td>
+<td>6</td>
+<td>6</td>
+<td>6</td>
+<td>6</td>
+<td></td>
+<td></td>
+<td>6</td>
+</tr>
+<tr>
+<td>P[10]</td>
+<td>-1</td>
+<td>-1</td>
+<td>-1</td>
+<td>-1</td>
+<td>-1</td>
+<td>-1</td>
+<td>7</td>
+<td>7</td>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+</tr>
+<tr>
+<td>P[11]</td>
+<td>-1</td>
+<td>-1</td>
+<td>-1</td>
+<td>-1</td>
+<td>-1</td>
+<td>-1</td>
+<td>-1</td>
+<td>-1</td>
+<td>10</td>
+<td>10</td>
+<td>10</td>
+<td>10</td>
+</tr>
+</tbody></table>
+<p>注：本表是纵向计算，与书上相同。</p>
+<h3 id="查找"><a href="#查找" class="headerlink" title="查找"></a>查找</h3><h3 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h3><p><img src="/2020/12/26/%E5%A4%8D%E4%B9%A0/image.png" alt="image" loading="lazy"></p>
+<p>1.希尔排序：选择增量，并排序，比如5,2,1         基数排序：使用队列，从最低位起，按关键字的不同值将序列中的记录分配到RADIX个队列中</p>
+<p>2.<strong>选择排序</strong>和<strong>归并排序</strong>不受关键字<strong>个数</strong>影响</p>
+<p>3.稳定算法：<strong>直接插入，冒泡，归并和基数</strong> 排序</p>
+<p><strong>直接插入排序</strong></p>
+<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token comment">//核心代码	</span>
+	<span class="token keyword">for</span><span class="token punctuation">(</span>i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>N<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
+	<span class="token punctuation">&#123;</span>
+		temp<span class="token operator">=</span>a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+		<span class="token keyword">for</span><span class="token punctuation">(</span>j<span class="token operator">=</span>i<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>j<span class="token operator">>=</span><span class="token number">0</span><span class="token punctuation">;</span>j<span class="token operator">--</span><span class="token punctuation">)</span>
+		<span class="token punctuation">&#123;</span>
+			<span class="token keyword">if</span><span class="token punctuation">(</span>a<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">></span>temp<span class="token punctuation">)</span>
+			a<span class="token punctuation">[</span>j<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">=</span>a<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">;</span> 
+            
+			<span class="token keyword">else</span>
+			<span class="token keyword">break</span><span class="token punctuation">;</span>
+	
+		<span class="token punctuation">&#125;</span> 
+			a<span class="token punctuation">[</span>j<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">=</span>temp<span class="token punctuation">;</span>
+	<span class="token punctuation">&#125;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>冒泡排序：即沉底或者冒头</strong></p>
+<p><img src="/2020/12/26/%E5%A4%8D%E4%B9%A0/image-20201227151453700.png" alt="image-20201227151453700" loading="lazy"></p>
+<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token keyword">for</span><span class="token punctuation">(</span>i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>N<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
+<span class="token punctuation">&#123;</span>
+	<span class="token keyword">for</span><span class="token punctuation">(</span>j<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>j<span class="token operator">&lt;</span>N<span class="token operator">-</span>i<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>j<span class="token operator">++</span><span class="token punctuation">)</span>
+	<span class="token punctuation">&#123;</span>
+		<span class="token keyword">if</span><span class="token punctuation">(</span>a<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">></span>a<span class="token punctuation">[</span>j<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+		<span class="token punctuation">&#123;</span>
+			temp<span class="token operator">=</span>a<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">;</span>
+			a<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">=</span>a<span class="token punctuation">[</span>j<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+			a<span class="token punctuation">[</span>j<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">=</span>temp<span class="token punctuation">;</span>
+		<span class="token punctuation">&#125;</span>
+	<span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>选择排序</p>
+<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token keyword">for</span><span class="token punctuation">(</span>i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>N<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
+<span class="token punctuation">&#123;</span>
+	<span class="token keyword">for</span><span class="token punctuation">(</span>j<span class="token operator">=</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">;</span>j<span class="token operator">&lt;</span>N<span class="token punctuation">;</span>j<span class="token operator">++</span><span class="token punctuation">)</span>
+	<span class="token punctuation">&#123;</span>
+		<span class="token keyword">if</span><span class="token punctuation">(</span>a<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">&lt;</span>a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
+		<span class="token punctuation">&#123;</span>
+			temp<span class="token operator">=</span>a<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">;</span>
+			a<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">=</span>a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+			a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">=</span>temp<span class="token punctuation">;</span>
+		<span class="token punctuation">&#125;</span>
+	<span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+
+
+
+<h1 id="JAVA"><a href="#JAVA" class="headerlink" title="JAVA"></a>JAVA</h1></div><div id="reward-container"><span class="hty-icon-button button-glow" id="reward-button" title="打赏" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === &quot;none&quot;) ? &quot;block&quot; : &quot;none&quot;;"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-hand-coin-line"></use></svg></span><div id="reward-comment">我很可爱，请给我钱</div><div id="qr" style="display:none;"><div style="display:inline-block"><a href="/images/zfb.png"><img loading="lazy" src="/images/zfb.png" alt="支付宝" title="支付宝"></a><div><span style="color:#00A3EE"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-alipay-line"></use></svg></span></div></div><div style="display:inline-block"><a href="/images/qq.png"><img loading="lazy" src="/images/qq.png" alt="QQ 支付" title="QQ 支付"></a><div><span style="color:#12B7F5"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-qq-line"></use></svg></span></div></div><div style="display:inline-block"><a href="/images/wx.png"><img loading="lazy" src="/images/wx.png" alt="微信支付" title="微信支付"></a><div><span style="color:#2DC100"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-wechat-pay-line"></use></svg></span></div></div></div></div><ul class="post-copyright"><li class="post-copyright-author"><strong>本文作者：</strong>yln</li><li class="post-copyright-link"><strong>本文链接：</strong><a href="http://www.blog.yln956.top/2020/12/26/%E5%A4%8D%E4%B9%A0/" title="复习">http://www.blog.yln956.top/2020/12/26/%E5%A4%8D%E4%B9%A0/</a></li><li class="post-copyright-license"><strong>版权声明：</strong>本博客所有文章除特别声明外，均默认采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener" title="CC BY-NC-SA 4.0 "><svg class="icon"><use xlink:href="#icon-creative-commons-line"></use></svg><svg class="icon"><use xlink:href="#icon-creative-commons-by-line"></use></svg><svg class="icon"><use xlink:href="#icon-creative-commons-nc-line"></use></svg><svg class="icon"><use xlink:href="#icon-creative-commons-sa-line"></use></svg></a> 许可协议。</li></ul></section></article><div class="post-nav"><div class="post-nav-item"></div><div class="post-nav-item"><a class="post-nav-next" href="/2020/12/03/%E4%BF%A1%E5%AE%89%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80C%E8%AF%AD%E8%A8%80%E4%BB%A3%E7%A0%81/" rel="next" title="信安数学基础C语言代码"><span class="post-nav-text">信安数学基础C语言代码</span><svg class="icon" aria-hidden="true"><use xlink:href="#icon-arrow-right-s-line"></use></svg></a></div></div></div><div id="comment"><div class="comment-tooltip text-center"><span>尝试使用 Disqus 评论系统。</span><br><span>您可以点击下方按钮切换对应评论系统。</span><br><div class="toggle-comment-system" style="margin: 1rem auto"><a class="toggle-comment-btn hty-button hty-button--raised text-uppercase" data-target="#valine-container" onclick="showComment(this.dataset.target)">valine</a><style>#disqus_thread {
+  display: none;
+}</style><a class="toggle-comment-btn hty-button hty-button--raised text-uppercase" data-target="#disqus_thread" onclick="showComment(this.dataset.target)">disqusjs</a><script>function hideAllComment() {
+  //- hide all
+  document.querySelectorAll('.toggle-comment-btn').forEach((btn) => {
+    const container = document.querySelector(btn.dataset.target);
+    if (container) {
+      container.style.display = "none";
+    }
+  });
+}
+function showComment(target) {
+  hideAllComment();
+  //- show target
+  const targetContainer = document.querySelector(target);
+  if (targetContainer) {
+    targetContainer.style.display = "block";
+  }
+}
+</script></div></div><div id="disqus_thread"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/disqusjs@latest/dist/disqusjs.css"><script src="https://cdn.jsdelivr.net/npm/disqusjs@latest/dist/disqus.js"></script><script>const disqusjsConfig = {"enable":true,"shortname":"yunyoujun"}
+function loadDisqus() {
+  const dsqjs = new DisqusJS(disqusjsConfig)
+}</script><script src="/js/comments/disqus.js"></script><div id="valine-container"></div><script src="https://cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js"></script><script>function initValine() {
+  const valineConfig = {"enable":true,"appId":null,"appKey":null,"placeholder":"大佬求指教&nbsp_(:з」∠)_","avatar":null,"pageSize":10,"visitor":true,"highlight":true,"recordIP":true,"enableQQ":true,"serverURLs":"https://lncld.yunyoujun.cn","requiredFields":["nick","mail"],"emojiCDN":"//i0.hdslb.com/bfs/emote/","emojiMaps":{"tv_doge":"6ea59c827c414b4a2955fe79e0f6fd3dcd515e24.png","tv_亲亲":"a8111ad55953ef5e3be3327ef94eb4a39d535d06.png","tv_偷笑":"bb690d4107620f1c15cff29509db529a73aee261.png","tv_再见":"180129b8ea851044ce71caf55cc8ce44bd4a4fc8.png","tv_冷漠":"b9cbc755c2b3ee43be07ca13de84e5b699a3f101.png","tv_发怒":"34ba3cd204d5b05fec70ce08fa9fa0dd612409ff.png","tv_发财":"34db290afd2963723c6eb3c4560667db7253a21a.png","tv_可爱":"9e55fd9b500ac4b96613539f1ce2f9499e314ed9.png","tv_吐血":"09dd16a7aa59b77baa1155d47484409624470c77.png","tv_呆":"fe1179ebaa191569b0d31cecafe7a2cd1c951c9d.png","tv_呕吐":"9f996894a39e282ccf5e66856af49483f81870f3.png","tv_困":"241ee304e44c0af029adceb294399391e4737ef2.png","tv_坏笑":"1f0b87f731a671079842116e0991c91c2c88645a.png","tv_大佬":"093c1e2c490161aca397afc45573c877cdead616.png","tv_大哭":"23269aeb35f99daee28dda129676f6e9ea87934f.png","tv_委屈":"d04dba7b5465779e9755d2ab6f0a897b9b33bb77.png","tv_害羞":"a37683fb5642fa3ddfc7f4e5525fd13e42a2bdb1.png","tv_尴尬":"7cfa62dafc59798a3d3fb262d421eeeff166cfa4.png","tv_微笑":"70dc5c7b56f93eb61bddba11e28fb1d18fddcd4c.png","tv_思考":"90cf159733e558137ed20aa04d09964436f618a1.png","tv_惊吓":"0d15c7e2ee58e935adc6a7193ee042388adc22af.png","tv_打脸":"56ab10b624063e966bfcb76ea5dc4794d87dfd47.png","tv_抓狂":"fe31c08edad661d63762b04e17b8d5ae3c71a757.png","tv_抠鼻":"c666f55e88d471e51bbd9fab9bb308110824a6eb.png","tv_斜眼笑":"911f987aa8bc1bee12d52aafe62bc41ef4474e6c.png","tv_无奈":"ea8ed89ee9878f2fece2dda0ea8a5dbfe21b5751.png","tv_晕":"5443c22b4d07fb1907ccc610c8e6db254f2461b7.png","tv_流汗":"cead1c351ab8d79e9f369605beb90148db0fbed3.png","tv_流泪":"7e71cde7858f0cd50d74b0264aa26db612a8a167.png","tv_流鼻血":"c32d39db2737f89b904ca32700d140a9241b0767.png","tv_点赞":"f85c354995bd99e28fc76c869bfe42ba6438eff4.png","tv_生气":"26702dcafdab5e8225b43ffd23c94ac1ff932654.png","tv_生病":"8b0ec90e6b86771092a498c54f09fc94621c1900.png","tv_疑问":"0793d949b18d7be716078349c202c15ff166f314.png","tv_白眼":"c1d59f439e379ee50eef488bcb5e5378e5044ea4.png","tv_皱眉":"72ccad6679fea0d14cce648b4d818e09b8ffea2d.png","tv_目瞪口呆":"0b8cb81a68de5d5365212c99375e7ace3e7891b7.png","tv_睡着":"8b196675b53af58264f383c50ad0945048290b33.png","tv_笑哭":"1abc628f6d4f4caf9d0e7800878f4697abbc8273.png","tv_腼腆":"89712c0d4af73e67f89e35cbc518420380a7f6f4.png","tv_色":"61822c7e9aae5da76475e7892534545336b23a6f.png","tv_调侃":"4bc022533ef31544ca0d72c12c808cf4a1cce3e3.png","tv_调皮":"b9c41de8e82dd7a8515ae5e3cb63e898bf245186.png","tv_鄙视":"6e72339f346a692a495b123174b49e4e8e781303.png","tv_闭嘴":"c9e990da7f6e93975e25fd8b70e2e290aa4086ef.png","tv_难过":"87f46748d3f142ebc6586ff58860d0e2fc8263ba.png","tv_馋":"fc7e829b845c43c623c8b490ee3602b7f0e76a31.png","tv_鬼脸":"0ffbbddf8a94d124ca2f54b360bbc04feb6bbfea.png","tv_黑人问号":"45821a01f51bc867da9edbaa2e070410819a95b2.png","tv_鼓掌":"1d21793f96ef4e6f48b23e53e3b9e42da833a0f6.png"},"el":"#valine-container","lang":"zh-cn"}
+  valineConfig.path = window.location.pathname
+  new Valine(valineConfig)
+}
+setTimeout(initValine, 800)</script></div></main><footer class="sidebar-translate" id="footer"><div class="beian"><a rel="noopener" href="https://beian.miit.gov.cn/" target="_blank">琼ICP备20000687号</a></div><div class="copyright"><span>&copy; 2019 – 2020 </span><span class="with-love" id="animate"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-cloud-line"></use></svg></span><span class="author"> yln</span></div><div class="live_time"><span>本博客已萌萌哒地运行</span><span id="display_live_time"></span><span class="moe-text">(●'◡'●)</span><script>function blog_live_time() {
+  window.setTimeout(blog_live_time, 1000);
+  const start = new Date('2020-11-05T00:00:00');
+  const now = new Date();
+  const timeDiff = (now.getTime() - start.getTime());
+  const msPerMinute = 60 * 1000;
+  const msPerHour = 60 * msPerMinute;
+  const msPerDay = 24 * msPerHour;
+  const passDay = Math.floor(timeDiff / msPerDay);
+  const passHour = Math.floor((timeDiff % msPerDay) / 60 / 60 / 1000);
+  const passMinute = Math.floor((timeDiff % msPerHour) / 60 / 1000);
+  const passSecond = Math.floor((timeDiff % msPerMinute) / 1000);
+  display_live_time.innerHTML = " " + passDay + " 天 " + passHour + " 小时 " + passMinute + " 分 " + passSecond + " 秒";
+}
+blog_live_time();
+</script></div></footer><a class="hty-icon-button" id="goUp" aria-label="back-to-top" href="#"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-arrow-up-s-line"></use></svg><svg class="progress-circle-container" viewBox="0 0 100 100"><circle class="progress-circle" id="progressCircle" cx="50" cy="50" r="48" fill="none" stroke="#6200ee" stroke-width="2" stroke-linecap="round"></circle></svg></a><a class="popup-trigger hty-icon-button icon-search" id="search" href="javascript:;" title="搜索"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-search-line"></use></svg></span></a><script>window.addEventListener("DOMContentLoaded", () => {
+  // Handle and trigger popup window
+  document.querySelector(".popup-trigger").addEventListener("click", () => {
+    document.querySelector(".popup").classList.add("show");
+    setTimeout(() => {
+      document.querySelector(".search-input").focus();
+    }, 100);
+  });
+
+  // Monitor main search box
+  const onPopupClose = () => {
+    document.querySelector(".popup").classList.remove("show");
+  };
+
+  document.querySelector(".popup-btn-close").addEventListener("click", () => {
+    onPopupClose();
+  });
+
+  window.addEventListener("keyup", event => {
+    if (event.key === "Escape") {
+      onPopupClose();
+    }
+  });
+});
+</script><script src="/js/search/local-search.js" defer></script><div class="popup search-popup"><div class="search-header"><span class="popup-btn-close close-icon hty-icon-button"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-close-line"></use></svg></span></div><div class="search-input-container"><input class="search-input" id="local-search-input" type="text" placeholder="搜索..." value=""></div><div id="local-search-result"></div></div><script>const date = new Date();
+const today = (date.getMonth() + 1) + "-" + date.getDate()
+const mourn_days = ["4-4","9-18"]
+if (mourn_days.includes(today)) {
+  document.documentElement.style.filter = "grayscale(1)";
+}</script><div class="aplayer no-destroy" id="aplayer" data-id="308168565" data-server="netease" data-type="playlist" data-fixed="true" data-theme="#6200ee" data-loop="all" data-order="list" data-preload="auto" data-volume="0.7" data-mutex data-lrctype="0" data-listmaxheight="340px" data-storagename="metingjs"></div></div><script defer src="/js/utils.js"></script><script defer src="/js/hexo-theme-yun.js"></script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"left","width":100,"height":300},"mobile":{"show":true},"log":false});</script></body></html>
