@@ -6,7 +6,7 @@
   <link href="http://www.blog.yln956.top/atom.xml" rel="self"/>
   
   <link href="http://www.blog.yln956.top/"/>
-  <updated>2021-01-11T16:48:51.986Z</updated>
+  <updated>2021-01-22T05:42:40.951Z</updated>
   <id>http://www.blog.yln956.top/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>vm装mac10.15</title>
+    <link href="http://www.blog.yln956.top/2021/01/22/vm%E8%A3%85mac10-15/"/>
+    <id>http://www.blog.yln956.top/2021/01/22/vm%E8%A3%85mac10-15/</id>
+    <published>2021-01-22T03:33:41.000Z</published>
+    <updated>2021-01-22T05:42:40.951Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Windows系统使用VMware安装MacOS Catalina 10.15系统（黑苹果）的教程，提供MacOS 10.15系统镜像，虚拟机软件VMware Workstation Pro15.5，unlocker3.02和11.5版本package的darwin.iso下载。</p><p>【安装准备】</p><p>1 系统镜像：macOS.Catalina.10.15.0.cdr，已经修改来支持在 VMware Workstation Pro 中运行</p><p>2 虚拟机软件：VMware Workstation Pro，版本号不低于 15.5，激活方法自行寻找。</p><p>3 unlocker：解锁VMware的MacOS支持，版本号不低于 3.0.2</p><p>4 darwin.iso：VMware Tools For Mac，用于解决 安装后，MacOS分辨率太小（1024*768像素），版本号不低于11.5 （注意，官方11.5已经不提供下载，您需要从本页面下载darwin.iso，低版本无法在新的MacOS系统中安装）</p><p>链接：<a href="https://pan.baidu.com/s/1Afwkar7JbBNNWMtIAmlGZQ">https://pan.baidu.com/s/1Afwkar7JbBNNWMtIAmlGZQ</a><br>提取码：gje2<br>复制这段内容后打开百度网盘手机App，操作更方便哦</p><p>提取码：grq1 </p><p>【安装步骤】</p><p>1 安装虚拟机软件：</p><p><img src="/2021/01/22/vm%E8%A3%85mac10-15/201910221518567681_c_w_600.png" alt="VMware Workstation Pro 15.5安装程序启动界面" loading="lazy"></p><p>首先，安装 VMware Workstation Pro 15.5，如果你的版本是15.0，不要使用官方的在线升级功能，因为你可能会陷入重启，重新安装的循环。只需要下载最新的安装包，会自动覆盖升级，原来的激活信息会保留。其他版本，从重新安装15.5，再重新激活。</p><p>安装虚拟机就不详细说了，请自行百度</p><p>2 安装unlocker：</p><p><strong>首先，任务管理器把所有关于VM的任务都关掉</strong></p><p>进入unlocker的目录，如果你是从Git上找到的unlocker，建议直接下载源码，不要下载 Releases 版本。进入源码根目录，右键，以<strong>管理员权限运行</strong> win-install.cmd，等待命令执行完毕，解锁 VMware Workstation Pro 安装 MacOS的功能。</p><p>3 新建虚拟机：</p><p>本文以典型为例</p><p><img src="/2021/01/22/vm%E8%A3%85mac10-15/image-20210122124653035.png" alt="image-20210122124653035" loading="lazy"></p><p><img src="/2021/01/22/vm%E8%A3%85mac10-15/image-20210122124756348.png" alt="image-20210122124756348" loading="lazy"></p><p>选择10.15</p><p><img src="/2021/01/22/vm%E8%A3%85mac10-15/image-20210122124826085.png" alt="image-20210122124826085" loading="lazy"></p><p>再选择放虚拟机的位置</p><p><img src="/2021/01/22/vm%E8%A3%85mac10-15/image-20210122124853188.png" alt="image-20210122124853188" loading="lazy"></p><p>这里选择硬盘大小，如果只是看看玩玩，40就够了，想用的建议大点，系统装完之后大概占用20G左右空间</p><p><img src="/2021/01/22/vm%E8%A3%85mac10-15/image-20210122124913372.png" alt="image-20210122124913372" loading="lazy"></p><p><img src="/2021/01/22/vm%E8%A3%85mac10-15/image-20210122125012741.png" alt="image-20210122125012741" loading="lazy"></p><p><img src="/2021/01/22/vm%E8%A3%85mac10-15/image-20210122125050551.png" alt="image-20210122125050551" loading="lazy"></p><p><img src="/2021/01/22/vm%E8%A3%85mac10-15/image-20210122125121826.png" alt="image-20210122125121826" loading="lazy"></p><p>这里全勾了</p><p><img src="/2021/01/22/vm%E8%A3%85mac10-15/image-20210122125148734.png" alt="image-20210122125148734" loading="lazy"></p><p>打开虚拟机目录编辑vmx文件，记事本就可以打开，在smc.present = “TRUE”下面一行添加smc.version = “0”</p><p><img src="/2021/01/22/vm%E8%A3%85mac10-15/image-20210122125537308.png" alt="image-20210122125537308" loading="lazy"></p><p>然后打开虚拟机</p><p><img src="/2021/01/22/vm%E8%A3%85mac10-15/image-20210122125301662.png" alt="image-20210122125301662" loading="lazy"></p><p>4 安装MacOS:</p><p>选择语言</p><p><img src="/2021/01/22/vm%E8%A3%85mac10-15/image-20210122130201051.png" alt="image-20210122130201051" loading="lazy"></p><p>选择磁盘工具格式化磁盘</p><p><img src="/2021/01/22/vm%E8%A3%85mac10-15/image-20210122130246531.png" alt="image-20210122130246531" loading="lazy"></p><p><img src="/2021/01/22/vm%E8%A3%85mac10-15/image-20210122130404576.png" alt="image-20210122130404576" loading="lazy"></p><p>然后返回选择安装，点继续，同意，然后等待安装完成</p><p><img src="/2021/01/22/vm%E8%A3%85mac10-15/image-20210122130457887.png" alt="image-20210122130457887" loading="lazy"></p><p>选择地区，然后一路继续</p><p><img src="/2021/01/22/vm%E8%A3%85mac10-15/image-20210122133101211.png" alt="image-20210122133101211" loading="lazy"></p><p><img src="/2021/01/22/vm%E8%A3%85mac10-15/image-20210122133654266.png" alt="image-20210122133654266" loading="lazy"><img src="/2021/01/22/vm%E8%A3%85mac10-15/image-20210122133654903.png" alt="image-20210122133654903" loading="lazy"></p><p>5 安装VMware Tools：<br>正常情况下，在第2步，安装 unlocker 时，会自动下载 darwin.iso，并复制到 VMware Tools 的根目录，但是由于官方源的失效，需要我们手动安装。先关闭MacOS，编辑虚拟机设置，在CDROM里，挂载 darwin.iso</p><p><img src="/2021/01/22/vm%E8%A3%85mac10-15/image-20210122133816635.png" alt="image-20210122133816635" loading="lazy"></p><p>然后再次启动MacOS，可以在桌面看到 VMware Tools 的盘符，双击，安装 VMware Tools 后即可</p><p>注意，这里要选择信任（先点击左下角的图标解锁），允许 系统 安装 VMware Tools。</p><p><img src="/2021/01/22/vm%E8%A3%85mac10-15/image-20210122134232974.png" alt="image-20210122134232974" loading="lazy"></p><p>安装成功后，会自动重启电脑，你就可以看到熟悉的MacOS系统，赶紧全屏，体验一下新系统操作的感觉吧！</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="vm装mac10.15" scheme="http://www.blog.yln956.top/categories/vm%E8%A3%85mac10-15/"/>
+    
+    
+    <category term="好东西" scheme="http://www.blog.yln956.top/tags/%E5%A5%BD%E4%B8%9C%E8%A5%BF/"/>
+    
+    <category term="虚拟机" scheme="http://www.blog.yln956.top/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
+    
+  </entry>
   
   <entry>
     <title>复习</title>
