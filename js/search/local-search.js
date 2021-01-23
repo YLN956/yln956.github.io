@@ -4,6 +4,8 @@
 // '<div id="no-result"><svg class="icon"><use xlink:href="#icon-emotion-unhappy-line"></use></svg></div>';
 //- local-search
 
+/* global CONFIG */
+
 /**
  * 本地搜索函数
  * @param {*} path xml 文件路径
@@ -55,8 +57,6 @@ const localSearch = (path, searchId, contentId) => {
               .trim()
               .replace(/<[^>]+>/g, "")
               .toLowerCase();
-            // absolute path
-            let data_url = CONFIG.root + data.url;
             let index_title = -1;
             let index_content = -1;
             let first_occur = -1;
@@ -83,7 +83,7 @@ const localSearch = (path, searchId, contentId) => {
             }
             // show search results
             if (isMatch) {
-              str += `<li><a href="${data_url}" class="search-result-title">${data_title}</a>`;
+              str += `<li><a href="${data.url}" class="search-result-title">${data_title}</a>`;
               let content = data.content.trim().replace(/<[^>]+>/g, "");
               if (first_occur >= 0) {
                 // cut out 100 characters
@@ -127,13 +127,10 @@ const localSearch = (path, searchId, contentId) => {
   xhr.send();
 };
 
-document.addEventListener(
-  "DOMContentLoaded",
-  ()=>{
-    localSearch(
-      CONFIG.local_search.path,
-      "local-search-input",
-      "local-search-result"
-    )
-  }
-);
+document.addEventListener("DOMContentLoaded", () => {
+  localSearch(
+    CONFIG.local_search.path,
+    "local-search-input",
+    "local-search-result"
+  );
+});
