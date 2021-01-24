@@ -1,0 +1,36 @@
+---
+layout: links
+title: 我的小伙伴们
+date: 2019-06-21 13:06:06
+keywords: 链接
+description: 云游的小伙伴们
+comments: true
+links:
+  - url: https://yunyoujun.cn
+    avatar: https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io/images/avatar.jpg
+    name: 云游君
+    blog: 云游君的小站
+    desc: All at sea.
+    color: "#0078e7" # 代表色
+    email: # 非必须
+  - url: https://webysx.github.io
+    avatar: 
+    name: WebDog
+    blog: WebDog
+    desc: tql.
+    color: # 代表色
+    email: # 非必须
+  - url: https://airirui.top 
+    avatar: http://airirui.top/wp-content/uploads/2020/10/463169e39dbc0eed5fe4a7ba7c846f3.jpg 
+    name: 没名字的小站
+    blog: 没名字的小站
+    desc: 用博客记录生活，技术，那些人那些事。
+    color: # 代表色
+    email: # 非必须
+placeholder: 还没想好说些什么 # 默认对友链的描述
+tip: 友链加载中～如失败请刷新重试～
+
+---
+
+
+
