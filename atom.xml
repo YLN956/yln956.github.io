@@ -6,7 +6,7 @@
   <link href="http://www.blog.yln956.top/atom.xml" rel="self"/>
   
   <link href="http://www.blog.yln956.top/"/>
-  <updated>2021-01-24T15:39:06.178Z</updated>
+  <updated>2021-03-07T01:53:59.204Z</updated>
   <id>http://www.blog.yln956.top/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>learn</title>
+    <link href="http://www.blog.yln956.top/2021/03/04/learn/"/>
+    <id>http://www.blog.yln956.top/2021/03/04/learn/</id>
+    <published>2021-03-04T11:50:53.000Z</published>
+    <updated>2021-03-07T01:53:59.204Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>$$ J_\alpha(x) = \sum_{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\left({ \frac{x}{2} }\right)}^{2m + \alpha} \text {，独立公式示例} $$</p><p>$$sada$$</p><p>\frac{7x+5}{1+y^2}</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="学习" scheme="http://www.blog.yln956.top/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="学习" scheme="http://www.blog.yln956.top/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="随便写写" scheme="http://www.blog.yln956.top/tags/%E9%9A%8F%E4%BE%BF%E5%86%99%E5%86%99/"/>
+    
+  </entry>
   
   <entry>
     <title>教你如何从零开始搭建一个属于自己的网站</title>

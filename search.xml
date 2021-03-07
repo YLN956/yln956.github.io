@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>learn</title>
+      <link href="2021/03/04/learn/"/>
+      <url>2021/03/04/learn/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>$$ J_\alpha(x) = \sum_{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\left({ \frac{x}{2} }\right)}^{2m + \alpha} \text {，独立公式示例} $$</p><p>$$sada$$</p><p>\frac{7x+5}{1+y^2}</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 学习 </tag>
+            
+            <tag> 随便写写 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>教你如何从零开始搭建一个属于自己的网站</title>
       <link href="2021/01/24/how-to-build-your-site/"/>
       <url>2021/01/24/how-to-build-your-site/</url>
