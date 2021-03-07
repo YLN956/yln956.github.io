@@ -1,10 +1,11 @@
 ---
 title: 教你如何从零开始搭建一个属于自己的网站
-date: 2021-01-24 15:03:07
 tags:
   - 教程
   - 学习
 categories: 教你如何从零开始搭建一个属于自己的网站
+abbrlink: 16713
+date: 2021-01-24 15:03:07
 ---
 
 > 搭建博客遇到了挺多问题，以此文章纪念一下自己搭博客的历程
@@ -379,7 +380,7 @@ hexo d
 
 这是我分别部署在github（国外）和gitee（国内）的博客
 
-http://yln956.github.io/
+https://yln956.github.io/
 
 https://yln956.gitee.io/
 
@@ -406,7 +407,7 @@ deploy:
 
 # 搭建博客遇到的一些问题
 
-## 1.图片部署不显示
+## 图片部署不显示
 
 解决办法
 
@@ -432,7 +433,7 @@ npm install hexo-asset-image --save
 
 ![image-20210124225259136](how-to-build-your-site/image-20210124225259136.png)
 
-## 2.hexo本地与部署不一致
+## hexo本地与部署不一致
 
 1. URL错误，检查是否能git成功
 

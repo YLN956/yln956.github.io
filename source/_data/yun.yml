@@ -30,6 +30,13 @@ social:
     icon: icon-netease-cloud-music-line
     color: "#C20C0C"
 
+post_meta:
+  item_text: false
+  created_at: true
+  updated_at: false
+  categories: true
+  tags: true
+
 colors:
   primary: "#0078E7"
   # primary: "#6200ee"
@@ -300,18 +307,18 @@ girls:
 tags:
   sql注入: crimson
   sqlilabs: orange
-  Parcel: "#21374b"
+  好东西: "#21374b"
   学习: saddlebrown
-  MAD: crimson
+  校园网破解: crimson
   教程: royalblue
   笔记: dimgray
-  分享: "#0078e7"
-  随笔: mediumpurple
-  Blender: "#d04d2d"
+  文件上传: "#0078e7"
+  虚拟机: mediumpurple
+  java: "#d04d2d"
   Linux: "#2577b1"
-  中传: "#ccb44b"
-  部落: "#DD306A"
-  科幻: midnightblue
+  导航: "#ccb44b"
+  C语言: "#DD306A"
+  网站: midnightblue
 
 categories:
   云游的小视频: "#FB7299"
