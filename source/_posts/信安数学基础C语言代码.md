@@ -70,7 +70,7 @@ int main() {
 	int n,sign=1,num;
 	int s,t,i,j,h,h1;
 	int b;
-	printf("信安实验191，2019122061，颜礼能\n");
+	printf("...........\n");
 	printf("输入要检验的数：");
 	scanf("%d",&n);
 	printf("求模使用的第一题的模重复平方计算法\n");

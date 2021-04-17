@@ -1,14 +1,43 @@
 ---
 title: learn
-date: 2021-03-04 19:50:53
 tags:
   - 学习
   - 随便写写
 categories: 学习
+abbrlink: 22394
+date: 2021-03-04 19:50:53
 ---
 
-$$ J_\alpha(x) = \sum_{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\left({ \frac{x}{2} }\right)}^{2m + \alpha} \text {，独立公式示例} $$
+# 1
 
-$$sada$$
+## 不知道放哪里的前置知识
 
-\frac{7x+5}{1+y^2}
+
+$$
+C^m_n=\frac{n!}{m!(n-m)!}
+$$
+$$
+例如,C^3_5=\frac{5!}{3!(5-3)!}
+=\frac{5\times4\times3\times2\times1}{3\times2\times1\times2\times1}
+=\frac{5\times4}{2\times1}
+=10
+$$
+
+$$
+0!=1
+$$
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+
+$$
+asdasd
+$$
+
+
+
+
+
+
+
+
+
