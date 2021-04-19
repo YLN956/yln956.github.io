@@ -4,13 +4,29 @@ tags:
   - 教程
   - 学习
 categories: 教程
-hide: true
+katex:
+  copy_tex: true
+  global: false
 abbrlink: 6075
 date: 2021-03-07 10:02:38
 ---
 
 # 示例
 
+```latex
+$$ E = mc^2 $$
+\[ E = mc^2 \]
+```
+$$ E = mc^2 $$
+\[ E = mc^2 \]
+
+```latex
+$E = mc^2$
+$\frac{\partial}{\partial t}$
+```
+
+$E = mc^2$
+$\frac{\partial}{\partial t}$
 $\frac{7x+5}{1+y^2}$
 
 $z=z_l$
