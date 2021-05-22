@@ -7,3 +7,12 @@ tags:
 categories: PHP
 hide: true
 ---
+
+不会，看菜鸟教程吧
+
+
+<a href="https://www.runoob.com/php/php-tutorial.html">PHP教程</a>
+
+
+
+<!-- more -->
