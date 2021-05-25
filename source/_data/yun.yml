@@ -71,7 +71,7 @@ banner:
 
 notice:
   enable: true
-  content: Thanks for watching my blog.
+  content: 欢迎.
 
 bg_image:
   enable: true
