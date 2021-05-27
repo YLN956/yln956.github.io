@@ -987,6 +987,8 @@ else
 
 **如何上传文件**
 
+在表单需要二进制数据时，比如文件内容，请使用 "**multipart/form-data**"。
+
 ```php
 <form action="upload_file.php" method="post" enctype="multipart/form-data">
     <label for="file">文件名：</label>
@@ -1110,11 +1112,6 @@ $dbname = "ylndb";
 // 创建连接
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// 检测连接
-$conn->connect_error;
-
-
-mysqli_select_db($conn, "test");
 $sql = "SELECT * FROM user";
 $result = mysqli_query($conn, $sql);
 
